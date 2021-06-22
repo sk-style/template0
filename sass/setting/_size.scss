@@ -1,0 +1,29 @@
+// ブレークポイント
+$breakpoints: (
+  'sp': 'screen and (max-width: 767px)',
+  'pc': 'screen and (min-width: 768px)',//   →横向き考えるなら1024
+
+
+);
+
+// 最大横幅
+$mw-base: 1200px;
+$mw-slct: 510px;
+
+// headerの高さ
+$h-header: 80px;
+$h-header-sp: 60px;
+
+// 余白
+$pd-sp: 15px;
+$pd-pc: 30px;
+
+// z-indexの指定
+$layer: (
+	modal: 100,
+	drawer: 30,
+	floating: 20,
+	header: 10,
+	default: 1,
+	bg: -10,
+);

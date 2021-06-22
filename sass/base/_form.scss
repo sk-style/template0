@@ -1,0 +1,77 @@
+// form初期化
+input[type="text"],
+input[type="textarea"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    padding: 0.4em 0.8em;
+    width: 100%;
+
+    &:focus {
+        border: 1px solid rgba(0, 0, 0, 0.32);
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+input[type="textarea"] {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    background-color: rgba(0, 0, 0, 0.32);
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 0 1em;
+    padding: 0.6em 2em;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+
+    &::-moz-foucus-inner {
+        border: none;
+        padding: 0;
+    }
+}
+
+select {
+    padding: 0.4em 0.8em;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent url(../) no-repeat center right 8px/16px 16px;
+    border-radius: 0;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    width: 100%;
+
+    &::-ms-expand {
+        display: none;
+    }
+
+    &:focus {
+        border: 1px solid rgba(0, 0, 0, 0.32);
+        box-shadow: none;
+        outline: none;
+    }
+}

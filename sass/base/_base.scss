@@ -1,0 +1,44 @@
+body {
+    font-family: $ff-base;
+    font-size: $fz-base;
+    font-weight: $fw-base;
+    letter-spacing: $ls-base;
+    line-height: $lh-base;
+    color: $color-txt;
+    background-color: $color-bg;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    // text-align: justify;
+    // font-feature-settings: 'palt';
+    // -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+    // color: $color-txt;
+}
+
+.inner {
+    max-width: $mw-base;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 0px;
+}
+
+// 表示切替
+._sp {
+    @include mq('pc') {
+        display: none;
+    }
+}
+._pc {
+    @include mq('sp') {
+        display: none;
+    }
+}

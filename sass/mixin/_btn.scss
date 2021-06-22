@@ -1,0 +1,25 @@
+@mixin _btn( $type:'base' ) {
+    > * {
+        @content;
+        font-weight: $fw-bold;
+        text-align: center;
+        max-width: 100%;
+        @include mq('sp') {
+            padding-right: 1.6em;
+            padding-left: 1.6em;
+        }
+        @include mq('pc') {
+            padding-right: 2em;
+            padding-left: 2em;
+        }
+
+        //ベースボタン
+        @if( $type == 'base' ) {
+            height: 60px;
+            line-height: 60px;
+        }
+
+        @else if( $type == '' ) {
+        }
+    }
+}
